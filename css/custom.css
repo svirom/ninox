@@ -71,7 +71,6 @@ h1 {
   font-size: 4.625rem;
 }
 h2 {
-  margin-top: 1.875rem;
   font-size: 2.375rem;
 }
 h3 {
@@ -423,9 +422,20 @@ p.subtitle {
 
 /* end header */
 
-/* process management section */
-.process-management {
+/* regular section */
+.section {
   padding: 75px 0;
+}
+@media (max-width: 767px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+/* end banner section */
+
+/* process management section */
+.process-management h2 {
+  margin-top: 1.875rem;
 }
 .process-management-content {
   padding-top: 2.5rem;
@@ -469,11 +479,37 @@ p.subtitle {
   color: #493f3f;
 }
 @media (max-width: 767px) {
-  .process-management {
-    padding: 40px 0;
-  }
   .process-management-list {
     padding-top: 20px;
   }
 }
 /* end process management section */
+
+/* automated solution section */
+.automated-solution {
+  background: rgb(175, 54, 53);
+}
+.automated-solution-list {
+  margin-top: 1rem;
+}
+.automated-solution-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-left: 80px;
+  height: 50px;
+}
+.automated-solution-list .list-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* end automated solution section */
+
