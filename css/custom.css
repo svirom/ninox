@@ -173,7 +173,8 @@ p.subtitle {
   padding-left: 15px;
   padding-right: 15px;
 }
-.grid-col-3 {
+.grid-col-3,
+.grid-colm-3 {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 33.333333%;
   flex: 0 0 33.333333%;
@@ -201,7 +202,8 @@ p.subtitle {
 }
 @media (max-width: 767px) {
   .grid-col-2,
-  .grid-col-3 {
+  .grid-col-3,
+  .grid-colm-3 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -289,7 +291,10 @@ p.subtitle {
 /* header */
 .header-wrapper {
   position: relative;
-  background: url('../img/header-bkgr.jpg') center center/cover no-repeat;
+  /* background: url('../img/header-bkgr.jpg') center center/cover no-repeat; */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header-wrapper::before {
   position: absolute;
@@ -536,6 +541,32 @@ p.subtitle {
   /* end header hero content */
 
 /* end header */
+
+/* companies section */
+.companies.section {
+  padding-bottom: 0;
+}
+.companies-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+         display: flex;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+  padding-bottom: 40px;
+}
+.companies-card img {
+  max-width: 180px;
+}
+@media (max-width: 767px) {
+  .companies-card:last-of-type {
+    padding-bottom: 0;
+  }
+}
+/* end companies section */
 
 /* process management section */
 .process-management h2 {
